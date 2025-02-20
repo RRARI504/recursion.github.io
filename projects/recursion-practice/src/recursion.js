@@ -24,32 +24,73 @@ var factorial = function(n) {
 var sum = function(array) {
 
   
-
   //base 
+  if(array.length === 0){
+    return 0
+    //base case saying if the array is empty return 0 because nothing is there 
 
-
+  }
+  
+ 
   //recursion 
-  return array[0] + sum - 1
+  return array[0] + sum(array.slice(1))
+  //return the first element of the array + the sum of the rest of the array using .slice(1)
+ 
 };
 
 // 3. Sum all numbers in an array containing nested arrays.
 // Example: arraySum([1,[2,3],[[4]],5]); // 15
 var arraySum = function(array) {
+
+
+
+
 };
 
 // 4. Check if a number is even.
 var isEven = function(n) {
+
+  //base
+  if(n === 0){ //return true for even numbers 
+    return true;
+  }
+  if(n === 1){ //return false for odd numbers 
+    return false;
+
+  }
+  if(n < 0){
+    return isEven(n + 2)// return the number + 2 to handle negative numbers 
+  }
+  
+  //recursion
+  return isEven (n - 2) // recusive part subtracts two and checks
+  
 };
 
 // 5. Sum all integers below a given integer.
 // sumBelow(10); // 45
 // sumBelow(7); // 21
 var sumBelow = function(n) {
+
+  //base 
+
+
+  //recursion
+
+
 };
 
 // 6. Get the integers in range (x, y).
 // Example:  range(2, 9);  // [3, 4, 5, 6, 7, 8]
 var range = function(x, y) {
+
+//base 
+
+
+
+//recusion
+
+
 };
 
 // 7. Compute the exponent of a number.
