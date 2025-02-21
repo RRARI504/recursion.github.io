@@ -73,9 +73,17 @@ var isEven = function(n) {
 var sumBelow = function(n) {
 
   //base 
+  if(n === 0){ //if n is zero return zero
+    return 0;
+  }
+  if(n > 0){ //if n is positive sum all integers below n
+    return (n - 1) + sumBelow(n - 1)
 
+  }
 
   //recursion
+  return (n + 1) + sumBelow(n + 1) 
+  //else if n is negative sum all integers above n
 
 
 };
@@ -85,6 +93,14 @@ var sumBelow = function(n) {
 var range = function(x, y) {
 
 //base 
+if(x || y === 0){
+  return [];
+}
+
+if(x < y){
+  return 
+
+}
 
 
 
