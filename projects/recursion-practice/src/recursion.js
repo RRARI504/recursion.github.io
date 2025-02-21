@@ -93,21 +93,7 @@ var sumBelow = function(n) {
 var range = function(x, y) {
 
 //base 
-if(x || y === 0){
-  return [];
 }
-
-if(x < y){
-  return 
-
-}
-
-
-
-//recusion
-
-
-};
 
 // 7. Compute the exponent of a number.
 // The exponent of a number says how many times the base number is used as a factor.
@@ -115,7 +101,18 @@ if(x < y){
 // Example:  exponent(4,3);  // 64
 // https://www.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/computing-powers-of-a-number
 var exponent = function(base, exp) {
+
+  if(exp === 0){
+    return 1;
+  }
+  if(exp === 1){
+    return base;
+
+  }
+
+  ///recursion 
 };
+
 
 // 8. Determine if a number is a power of two.
 // powerOfTwo(1); // true
